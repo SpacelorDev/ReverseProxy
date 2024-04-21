@@ -1,3 +1,12 @@
+sudo apt update
+sudo apt-get -y install nginx
+sudo apt-get install software-properties-common
+sudo add-apt-repository universe
+sudo add-apt-repository ppa:certbot/certbot
+sudo apt-get update
+sudo apt-get -y install certbot python3-certbot-nginx
+sudo apt-get -y install certbot python3-certbot-nginx
+
 echo "This script will create a SSL reverse proxy that points your (sub)domain to an IP with an open port" 
 
 echo "What is the (sub)domain name you want to reverse proxy? (Eg. sub.domain.com)"                                                                                                                   
